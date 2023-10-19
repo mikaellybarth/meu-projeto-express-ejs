@@ -6,6 +6,10 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 
+const produtos = [
+  {id: 1, nome: "NOME DO PRODUTO", preço: "55,00", descricao: "descrição do produto", imagem: "imagem do produto ex produtos ejs" },
+]
+
 app.get('/produtos', (req, res) => {
   res.render('produtos', { message: 'Bem vindo a pagina produtos!' });
 });
