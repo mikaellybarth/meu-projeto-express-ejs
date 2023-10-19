@@ -7,19 +7,11 @@ app.use(express.static('public'));
 
 
 const produtos = [
-  {id: 1, nome: "NOME DO PRODUTO", preço: "55,00", descricao: "descrição do produto", imagem: "imagem do produto ex produtos ejs" },
+  {id: 1, nome: "Ração p/ gato", preço: "55,00", descricao: "Ração whiskas", imagem: "produtos.webp" },
 ]
 
 app.get('/produtos', (req, res) => {
   res.render('produtos', { message: 'Bem vindo a pagina produtos!' });
-});
-
-app.get('/produtos1', (req, res) => {
-  res.render('produtos1', { message: 'Bem vindo a pagina produtos!' });
-});
-
-app.get('/produtos2', (req, res) => {
-  res.render('produtos2', { message: 'Bem vindo a pagina produtos!' });
 });
 
 app.get('/', (req, res) => {
