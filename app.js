@@ -18,6 +18,10 @@ app.get('/produtos1', (req, res) => {
   res.render('produtos1', { message: 'Bem vindo a pagina produtos!' });
 });
 
+app.get('/produtos2', (req, res) => {
+  res.render('produtos2', { message: 'Bem vindo a pagina produtos!' });
+});
+
 app.get('/', (req, res) => {
   res.render('index', { message: 'Produtos mikas!' });
 });
