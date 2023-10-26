@@ -5,4 +5,27 @@ body {
     font-family: 'rancho', cursive;
   }
 
-  
+  .card {
+  margin: 30px;
+  background-color: #0052;
+  border: 1px solid #2222;
+  display: inline-block;
+  overflow: hidden;
+  height: 350px;
+  width: 250px;
+}
+.card-principal{
+  display: inline-block;
+  margin: 30px;
+  padding: 5px;
+  background-color: #0052;
+  border: 1px solid #2222;
+  display: inline-block;
+  overflow: hidden;
+  height: 600px;
+  width: 300px;
+}
+.imagem{
+  width: 250px;
+  height: 250px;
+}
