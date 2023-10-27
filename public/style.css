@@ -15,10 +15,17 @@ body {
   border: 1px solid #f5f5f522;
   display: inline-block;
   overflow: hidden;
-  height: 600px;
+  height: 480px;
   width: 300px;
 }
 .imagem{
-  width: 250px;
+  width: 200px;
   height: 250px;
+}
+
+.card-h{
+  padding: 5px;
+  margin: 0;
+  font-size: 18px;
+
 }
