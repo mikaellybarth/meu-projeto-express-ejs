@@ -15,20 +15,20 @@ body {
   border: 1px solid #f5f5f522;
   display: inline-block;
   overflow: hidden;
-  height: 620px;
+  height: 530px;
   width: 300px;
 }
 .imagem{
-  
+  margin-left: 75px;
   width: 150px;
   height: 250px;
 }
 
 .card-h{
-  font-family: monospace;
-  padding: 5px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  padding: 2px;
   margin: 0;
-  font-size: 18px;
+  font-size: 15px;
   color: #c8a8d8;
 
 }
