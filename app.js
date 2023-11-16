@@ -18,18 +18,18 @@ const produtos = [
   {id: 9, nome: "Ração Whiskas", preço: "R$179,90", descricao: "Ração Premium 100% completa e balanceada para gatos adultos.", imagem: "https://m.media-amazon.com/images/I/81IuLVVQq5L._AC_SY879_.jpg" },
 ]
 
-function buscarProdutoPorID(){
-  const produto = produtos.find (produto => produto.id == 3);
+function buscarProdutoPorID(id){
+  const produto = produtos.find (produto => produto.id == id);
   return produto || null 
 
 }
 
 app.get('/produtos', (req, res) => {
-  res.render('produtos', { message: 'Bem vindo a pagina produtos!' });
+  res.render('index', { produtos});
 });
 
 app.get('/', (req, res) => {
-  res.render('index', { message: 'Produtos mikas!' });
+  res.render('index', { produtos});
 });
 
 app.listen(port, () => {
