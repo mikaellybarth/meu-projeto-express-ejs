@@ -7,7 +7,7 @@ app.use(express.static('public'));
 
 
 const produtos = [
-  {id: 1, nome: "Ração p/ gato", preço: "55,00", descricao: "Ração whiskas", imagem: "produtos.webp" },
+  {id: 1, nome: "Ração Whiskas", preço: "R$179,90", descricao: "Ração Whiskas", imagem: "https://m.media-amazon.com/images/I/81IuLVVQq5L._AC_SY879_.jpg" },
 ]
 
 app.get('/produtos', (req, res) => {
