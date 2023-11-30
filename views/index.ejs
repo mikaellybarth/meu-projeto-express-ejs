@@ -7,17 +7,32 @@
 
 <body>
 
-  
+  <nav>
+
+    <ul>
+        <li>Produtos de Mika's i Mika's</li>
+      
+    </ul>
+
+    <nav>
+
+      <ul>
+          <li>Carrinho</li>
+          <li>Favoritos</li>
+          <li>Promoção</li>
+        
+      </ul>
+    
+    
+</nav>
 
  
-    
-    <h1>mikas</h1>
 
     <% for(let produto of produtos){ %>
   
  <div class="card-principal">
  
-  <a href="/produtos">
+  <a href="/produtos/<%= produto.id %>"> 
   <img src="https://m.media-amazon.com/images/I/81IuLVVQq5L._AC_SY879_.jpg" class="imagem"><img>
   <h4 class="card-h"><%=produto.nome%></h4>
   <h4 class="card-h"><%=produto.preco%></h4>
@@ -25,10 +40,6 @@
   </a>
   </div>
   <% } %>
-
-  
-
-  
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>

@@ -25,8 +25,9 @@ function buscarProdutoPorID(id){
 
 }
 
-app.get('/produtos', (req, res) => {
-  res.render('produtos', { produtos});
+app.get('/produtos/:id', (req, res) => {
+  const produto = buscarProdutoPorID(req.params.id)
+  res.render('produtos', { produto});
 });
 
 app.get('/', (req, res) => {
